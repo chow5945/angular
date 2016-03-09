@@ -1,0 +1,14 @@
+[
+	{
+		"text":"查询报表",
+		"sref" : "index.query"
+	}, 
+	{
+		"text" : "交易管理",
+		"sref":"index.trade"
+	}, 
+	{
+		"text" : "配置",
+		"sref":"index.config"
+	}
+]

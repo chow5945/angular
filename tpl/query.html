@@ -1,0 +1,147 @@
+<div class="row">
+	<div class="col-md-2">
+		<div left-menu-list></div>
+	</div>
+	<div class="col-md-9" ui-view>
+		<div class="row">
+			<div class="col-md-11 tab-index">
+				<ul id="myTab" class="nav nav-tabs">
+					<li>
+						<a href="/#query" data-toggle="tab">查询辅助</a>
+					</li>
+					<li class="active">
+						<a href="/#statistics" data-toggle="tab">统计维度</a>
+					</li>
+				</ul>
+				<div class="tab-content tab-border">
+					<div class="tab-pane fade" id="query">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="table-name" class="col-sm-offset-1 col-sm-11 control-label table-name-lable">表名</label>
+								<div class="col-sm-offset-1 col-md-9">
+									<select class="form-control" id="table-name">
+										<option>rtapam_dim_trans</option>
+										<option>...</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="statistics-dimensionality" class="col-sm-offset-1 col-sm-5 control-lable">统计维度</label>
+								<div class="col-sm-6">
+									<button type="button" id="statistics-dimensionality" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="business" class="col-sm-offset-1 col-sm-5 control-lable">业务</label>
+								<div class="col-sm-6">
+									<button type="button" id="business" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="statistics-index" class="col-sm-offset-1 col-sm-5 control-lable">统计指标</label>
+								<div class="col-sm-6">
+									<button type="button" id="statistics-index" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="submit" class="col-sm-offset-1 col-md-5 control-lable"> </label>
+								<div class="col-sm-6">
+									<button type="submit" id="submit" class="btn btn-primary">
+										生成
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane fade active in" id="statistics">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="start-date" class="col-sm-offset-1 col-sm-11 control-lable top-spacing">清算时间</label>
+								<div class="col-sm-offset-2 col-sm-8 input-group top-spacing">
+									<input type="text" id="start-date" class="form-control" placeholder="开始时间"/>
+									<span class="input-group-addon"> <a href="javascript:void(0);" class="btn-xs"><i class="glyphicon glyphicon-calendar"></i></a> </span>
+								</div>
+								<div class="col-sm-offset-2 col-sm-8 input-group top-spacing">
+									<input type="text" id="end-date" class="form-control" placeholder="结束时间"/>
+									<span class="input-group-addon"> <a href="javascript:void(0);" class="btn-xs"><i class="glyphicon glyphicon-calendar"></i></a> </span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="trading-channel" class="col-sm-offset-1 col-sm-5 control-lable">交易渠道</label>
+								<div class="col-sm-6">
+									<button type="button" id="trading-channel" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="branch-company-statistical-caliber" class="col-sm-offset-1 col-sm-5 control-lable">分公司统计口径</label>
+								<div class="col-sm-6">
+									<button type="button" id="branch-company-statistical-caliber" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="merchants-type" class="col-sm-offset-1 col-sm-5 control-lable">商户类型</label>
+								<div class="col-sm-6">
+									<button type="button" id="merchants-type" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="car-brand" class="col-sm-offset-1 col-sm-5 control-lable">卡品牌</label>
+								<div class="col-sm-6">
+									<button type="button" id="car-brand" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="car-nature" class="col-sm-offset-1 col-sm-5 control-lable">卡性质</label>
+								<div class="col-sm-6">
+									<button type="button" id="car-nature" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="main-bank-statistics" class="col-sm-offset-1 col-sm-5 control-lable">17大行统计</label>
+								<div class="col-sm-6">
+									<button type="button" id="main-bank-statistics" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="same-city-diffrent-place" class="col-sm-offset-1 col-sm-5 control-lable">同城异地</label>
+								<div class="col-sm-6">
+									<button type="button" id="same-city-diffrent-place" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="directly-indirect-connect-trading" class="col-sm-offset-1 col-sm-5 control-lable">直连间连交易</label>
+								<div class="col-sm-6">
+									<button type="button" id="directly-indirect-connect-trading" class="btn btn-default">
+										配置
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

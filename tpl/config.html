@@ -1,0 +1,103 @@
+<button class="btn btn-primary" ng-click="openConfigModal()">查询配置明细</button>
+<div class="modal fade" id="mod-config-detail" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title">查询配置明细</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-10">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">
+									业务明细
+								</div>
+							</div>
+							<div class="panel-body">
+								<ul class="list-inline">
+									<li>
+										IC卡交易
+									</li>
+									<li>
+										IC卡降级交易
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-10">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">
+									统计维度明细
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="">
+									<label>交易渠道</label>
+									<ul class="list-inline">
+										<li>
+											个人电脑
+										</li>
+										<li>
+											手机设备
+										</li>
+									</ul>
+								</div>
+								<div class="">
+									<label>分公司</label>
+									<ul class="list-inline">
+										<li>
+											上海
+										</li>
+										<li>
+											江苏
+										</li>
+										<li>
+											宁波
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-10">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">
+									统计指标明细
+								</div>
+							</div>
+							<div class="panel-body">
+								<ul class="list-inline">
+									<li>
+										交易总笔数
+									</li>
+									<li>
+										清算金额
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					关闭
+				</button>
+				<button type="button" class="btn btn-primary">
+					提交更改
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

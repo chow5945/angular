@@ -1,0 +1,55 @@
+<button class="btn btn-primary" ng-click="openTradeModal()" id="opnTrade">交易渠道配置</button>
+<div class="modal fade" id="mod-columned-selector" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title">交易渠道配置</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-sm-2">
+						<div>
+							<a href='javascript:void(0);' ng-click="selectAll()"><i class="glyphicon glyphicon-ok"></i> 全选</a>
+						</div>
+						<div>
+							<a href='javascript:void(0);' ng-click="deselectAll()"><i class="glyphicon glyphicon-remove"></i> 反选</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div multi-select></div>
+					</div>
+					<div class="col-sm-2" style="float: right;margin-right: 12px;">
+						<table class="table table-bordered table-striped">
+							<tr>
+								<td>[&nbsp;&nbsp;↓&nbsp;&nbsp;]&nbsp;&nbsp;下</td>
+							</tr>
+							<tr>
+								<td>[&nbsp;&nbsp;↑&nbsp;&nbsp;]&nbsp;&nbsp;上</td>
+							</tr>
+							<tr>
+								<td>[&nbsp;—&nbsp;]&nbsp;&nbsp;空格</td>
+							</tr>
+							<tr>
+								<td>[ ← ]&nbsp;&nbsp;左</td>
+							</tr>
+							<tr>
+								<td>[ → ]&nbsp;&nbsp;右</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					关闭
+				</button>
+				<button type="button" class="btn btn-primary" ng-click="viewResult()">
+					提交更改
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

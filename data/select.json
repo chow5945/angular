@@ -1,0 +1,14 @@
+[
+	{
+		"text":"个人电脑",
+		"value" : "private"
+	}, 
+	{
+		"text" : "手机设备",
+		"value":"mobile"
+	}, 
+	{
+		"text" : "自助式固定电话",
+		"value":"auto"
+	}
+]
